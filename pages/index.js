@@ -1,4 +1,6 @@
 import Footer from '../components/Footer';
+import Link from 'next/link';
+
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -72,22 +74,28 @@ export default function Home() {
         </section>
 
         {/* Botones de Catálogo y Contáctanos */}
-        <section className="py-12 bg-[#8B5E3C] text-center fade-in opacity-0">
-          <div className="flex justify-center gap-8">
-            <a
-              href="/catalogo"
-              className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
-            >
-              Catálogo
-            </a>
-            <a
-              href="/contacto"
-              className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
-            >
-              Contáctanos
-            </a>
-          </div>
-        </section>
+
+
+
+<section className="py-12 bg-[#8B5E3C] text-center fade-in opacity-0">
+  <div className="flex justify-center gap-8">
+    <a
+      href="/catalogo"
+      className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
+    >
+      Catálogo
+    </a>
+    <Link href="/contacto">
+      <div
+        className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
+      >
+        Contáctanos
+      </div>
+    </Link>
+  </div>
+</section>
+
+
 
         {/* Carrusel de Fotos - Nuestro Trabajo */}
         <section id="carrusel" className="py-12 bg-[#F5F5DC] fade-in opacity-0">
