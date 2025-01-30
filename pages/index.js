@@ -103,12 +103,12 @@ export default function Home() {
 
 <section className="py-12 bg-[#8B5E3C] text-center fade-in opacity-0">
   <div className="flex justify-center gap-8">
-    <a
+    <Link
       href="/catalogo"
       className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
     >
       Catálogo
-    </a>
+    </Link>
     <Link href="/contacto">
       <div
         className="bg-[#6B8E23] text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transform transition-transform hover:scale-110"
@@ -129,28 +129,28 @@ export default function Home() {
           <Carousel>
             <CarouselContent>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <img
+                <image
                   src="images/especial1.jpg"
                   alt="Imagen 1"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3"> 
-                <img
+                <image
                   src="images/especial2.jpg"
                   alt="Imagen 2"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-1s"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <img
+                <imgage
                   src="images/especial3.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <img
+                <image
                   src="images/especial4.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
@@ -159,7 +159,7 @@ export default function Home() {
 
 
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <img
+                <image
                   src="images/especial5.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
@@ -167,7 +167,7 @@ export default function Home() {
               </CarouselItem>
 
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <img
+                <image
                   src="images/especial6.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
@@ -175,7 +175,7 @@ export default function Home() {
               </CarouselItem>
 
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <img
+                <image
                   src="images/especial7.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="carousel">
             <div className="w-80 mx-auto bg-[#D2B48C] text-[#4E3620] p-8 rounded-lg shadow-lg">
               <p className="text-lg italic mb-4">
-                "Altas Montañas nos ha proveído con productos de excelente calidad para nuestros proyectos, siempre entregando a tiempo y con la mejor atención."
+                Altas Montañas nos ha proveído con productos de excelente calidad para nuestros proyectos, siempre entregando a tiempo y con la mejor atención.
               </p>
               <p className="font-bold">Carlos Mendoza</p>
               <p className="text-[#4E3620]">Arquitecto</p>
