@@ -55,7 +55,7 @@ export default function Contacto() {
   return (
     <div className="container mx-auto px-6 py-12 bg-[#F5F5F5]">
       <h2 className="text-5xl font-extrabold text-[#4E3620] text-center mb-8">
-        Altas Montañas Asseradero
+       MADERAS ALTAS MONTAÑAS
       </h2>
 
       {/* Formulario de contacto */}
