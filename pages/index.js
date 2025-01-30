@@ -1,6 +1,6 @@
 import Footer from '../components/Footer';
 import Link from 'next/link';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import {
   Carousel,
@@ -129,55 +129,69 @@ export default function Home() {
           <Carousel>
             <CarouselContent>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <image
-                  src="images/especial1.jpg"
+                <Image
+                  src="/images/especial1.jpg"
                   alt="Imagen 1"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3"> 
-                <image
-                  src="images/especial2.jpg"
+                <Image
+                  src="/images/especial2.jpg"
                   alt="Imagen 2"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-1s"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <imgage
-                  src="images/especial3.jpg"
+                <Image
+                  src="/images/especial3.jpg"
                   alt="Imagen 3"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <image
-                  src="images/especial4.jpg"
+                <Image
+                  src="/images/especial4.jpg"
                   alt="Imagen 3"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
               </CarouselItem>
 
 
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <image
-                  src="images/especial5.jpg"
+                <Image
+                  src="/images/especial5.jpg"
                   alt="Imagen 3"
-                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
-                />
-              </CarouselItem>
-
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <image
-                  src="images/especial6.jpg"
-                  alt="Imagen 3"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
               </CarouselItem>
 
               <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
-                <image
-                  src="images/especial7.jpg"
+                <Image
+                  src="/images/especial6.jpg"
                   alt="Imagen 3"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <Image
+                  src="/images/especial7.jpg"
+                  alt="Imagen 3"
+                  width={500} // Ajusta según sea necesario
+                  height={300} // Ajusta según sea necesario
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
               </CarouselItem>
