@@ -120,23 +120,55 @@ export default function Home() {
           </h2>
           <Carousel>
             <CarouselContent>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <img
-                  src="images/Agregar texto (2).png"
+                  src="images/especial1.jpg"
                   alt="Imagen 1"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn"
                 />
               </CarouselItem>
-              <CarouselItem className="basis-1/3"> 
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"> 
                 <img
-                  src="images/download.png"
+                  src="images/especial2.jpg"
                   alt="Imagen 2"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-1s"
                 />
               </CarouselItem>
-              <CarouselItem className="basis-1/3" >
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
                 <img
-                  src="images/Agregar texto.png"
+                  src="images/especial3.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial4.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial5.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial6.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial7.jpg"
                   alt="Imagen 3"
                   className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
                 />
@@ -164,7 +196,7 @@ export default function Home() {
             <h2 className="text-5xl font-extrabold text-[#4E3620] mb-6">Nuestra Visión</h2>
             <p className="text-lg font-light text-[#4E3620] opacity-90 max-w-3xl mx-auto">
               Nuestra visión es ser reconocidos como líderes del sector de la madera, manteniendo siempre un compromiso con la innovación y la preservación del medio ambiente.
-              Buscamos expandir nuestras operaciones a nivel global, siempre impulsando el respeto y cuidado de nuestros recursos naturales.
+              Buscamos expandir nuestras operaciones a nivel nacional, siempre impulsando el respeto y cuidado de nuestros recursos naturales.
             </p>
           </div>
         </section>
@@ -174,7 +206,7 @@ export default function Home() {
           <div className="container mx-auto text-center px-6">
             <h2 className="text-5xl font-extrabold text-white mb-6">Nuestro Alcance</h2>
             <p className="text-lg font-light text-white opacity-90 max-w-3xl mx-auto">
-              Con más de 20 años de experiencia, nuestra presencia abarca tanto el mercado local como nacional, ofreciendo soluciones personalizadas y de alta calidad para diversas industrias, como la construcción, la decoración y los muebles.
+            En Madera Altas Montañas, estamos en constante crecimiento, ofreciendo madera de alta calidad para la construcción, la decoración y la fabricación de muebles. Nos destacamos por brindar soluciones personalizadas, adaptadas a las necesidades del mercado local y nacional.
             </p>
           </div>
         </section>
