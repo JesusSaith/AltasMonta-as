@@ -2,6 +2,13 @@ import Footer from '../components/Footer';
 import Link from 'next/link';
 
 import { useEffect, useState } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -29,32 +36,49 @@ export default function Home() {
     <div>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-[#4E3620] text-white shadow-md z-50">
-        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Altas Montañas</h1>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#mision" className="hover:underline">
-                Misión
-              </a>
-            </li>
-            <li>
-              <a href="#vision" className="hover:underline">
-                Visión
-              </a>
-            </li>
-            <li>
-              <a href="#alcance" className="hover:underline">
-                Alcance
-              </a>
-            </li>
-            <li>
-              <a href="#testimonios" className="hover:underline">
-                Testimonios
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 className="text-2xl font-bold text-white">Altas Montañas</h1>
+    <ul className="flex space-x-8">
+      <li>
+        <a
+          href="#mision"
+          className="text-lg font-semibold hover:text-[#F5F5DC] transition-colors duration-300 flex items-center gap-2"
+        >
+          <i className="fas fa-bullseye"></i> {/* Icono para Misión */}
+          Misión
+        </a>
+      </li>
+      <li>
+        <a
+          href="#vision"
+          className="text-lg font-semibold hover:text-[#F5F5DC] transition-colors duration-300 flex items-center gap-2"
+        >
+          <i className="fas fa-eye"></i> {/* Icono para Visión */}
+          Visión
+        </a>
+      </li>
+      <li>
+        <a
+          href="#alcance"
+          className="text-lg font-semibold hover:text-[#F5F5DC] transition-colors duration-300 flex items-center gap-2"
+        >
+          <i className="fas fa-globe"></i> {/* Icono para Alcance */}
+          Alcance
+        </a>
+      </li>
+      <li>
+        <a
+          href="#testimonios"
+          className="text-lg font-semibold hover:text-[#F5F5DC] transition-colors duration-300 flex items-center gap-2"
+        >
+          <i className="fas fa-comments"></i> {/* Icono para Testimonios */}
+          Testimonios
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
       <main className="pt-20">
         {/* Portada */}
@@ -68,7 +92,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="relative h-full flex justify-center items-center">
             <h1 className="text-4xl font-bold text-white text-center animate__animated animate__fadeInDown">
-              Bienvenido a Altas Montañas
+              Bienvenido a Maderas Altas Montañas
             </h1>
           </div>
         </section>
@@ -99,30 +123,68 @@ export default function Home() {
 
         {/* Carrusel de Fotos - Nuestro Trabajo */}
         <section id="carrusel" className="py-12 bg-[#F5F5DC] fade-in opacity-0">
-          <h2 className="text-5xl font-extrabold text-[#4E3620] mb-6 text-center">Nuestro Trabajo</h2>
-          <div className="carousel w-full flex overflow-x-scroll space-x-6">
-            <div className="w-1/3">
-              <img
-                src="images/Agregar texto (2).png"
-                alt="Imagen 1"
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="w-1/3">
-              <img
-                src="images/download.png"
-                alt="Imagen 2"
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="w-1/3">
-              <img
-                src="images/Agregar texto.png"
-                alt="Imagen 3"
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+          <h2 className="text-5xl font-extrabold text-[#4E3620] mb-6 text-center animate__animated animate__fadeInUp">
+            Nuestro Trabajo
+          </h2>
+          <Carousel>
+            <CarouselContent>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src="images/especial1.jpg"
+                  alt="Imagen 1"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"> 
+                <img
+                  src="images/especial2.jpg"
+                  alt="Imagen 2"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-1s"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial3.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial4.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial5.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial6.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" >
+                <img
+                  src="images/especial7.jpg"
+                  alt="Imagen 3"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg animate__animated animate__fadeIn animate__delay-2s"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </section>
 
         {/* Misión */}
@@ -142,7 +204,7 @@ export default function Home() {
             <h2 className="text-5xl font-extrabold text-[#4E3620] mb-6">Nuestra Visión</h2>
             <p className="text-lg font-light text-[#4E3620] opacity-90 max-w-3xl mx-auto">
               Nuestra visión es ser reconocidos como líderes del sector de la madera, manteniendo siempre un compromiso con la innovación y la preservación del medio ambiente.
-              Buscamos expandir nuestras operaciones a nivel global, siempre impulsando el respeto y cuidado de nuestros recursos naturales.
+              Buscamos expandir nuestras operaciones a nivel nacional, siempre impulsando el respeto y cuidado de nuestros recursos naturales.
             </p>
           </div>
         </section>
@@ -152,7 +214,7 @@ export default function Home() {
           <div className="container mx-auto text-center px-6">
             <h2 className="text-5xl font-extrabold text-white mb-6">Nuestro Alcance</h2>
             <p className="text-lg font-light text-white opacity-90 max-w-3xl mx-auto">
-              Con más de 20 años de experiencia, nuestra presencia abarca tanto el mercado local como nacional, ofreciendo soluciones personalizadas y de alta calidad para diversas industrias, como la construcción, la decoración y los muebles.
+            En Madera Altas Montañas, estamos en constante crecimiento, ofreciendo madera de alta calidad para la construcción, la decoración y la fabricación de muebles. Nos destacamos por brindar soluciones personalizadas, adaptadas a las necesidades del mercado local y nacional.
             </p>
           </div>
         </section>
