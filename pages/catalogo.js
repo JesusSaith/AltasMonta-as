@@ -96,7 +96,7 @@ export default function Catalogo() {
             className="p-6 bg-white border border-[#4E3620] rounded-lg shadow-lg transition-transform hover:scale-105 cursor-pointer"
             onClick={() => setProductoSeleccionado(producto)}
           >
-            <img
+            <image
               src={producto.imagen}
               alt={producto.nombre}
               className="w-full h-48 object-cover mb-4 rounded-md"
@@ -118,7 +118,7 @@ export default function Catalogo() {
             <p className="text-xl font-bold text-[#6B8E23] mb-2">{productoSeleccionado.precio ? `${productoSeleccionado.precio} pesos` : 'Consultar'}</p>
             <p className="text-sm text-[#4E3620]">Medidas: {productoSeleccionado.medidas}</p>
             <div className="mb-4">
-              <img
+              <image
                 src={productoSeleccionado.imagen}
                 alt={productoSeleccionado.nombre}
                 className="w-full h-72 object-cover mb-4 rounded-md"
